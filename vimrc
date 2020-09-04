@@ -11,8 +11,8 @@
 "==========================================
 
 " leader
-let mapleader = ','
-let g:mapleader = ','
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 
 " syntax
 syntax on
@@ -44,7 +44,6 @@ set tm=500
 
 
 " show location
-set cursorcolumn
 set cursorline
 
 
@@ -196,9 +195,6 @@ set pastetoggle=<F5>            "    when in insert mode, press <F5> to go to
                                 "    that won't be autoindented
 au InsertLeave * set nopaste
 nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
-
-" kj 替换 Esc
-inoremap kj <Esc>
 
 " Quickly close the current window
 nnoremap <leader>q :q<CR>
